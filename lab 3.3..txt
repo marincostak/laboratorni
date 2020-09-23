@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+float x,y,z,f,m,n;
+printf("Веддіть число x =");
+scanf("%f",&x);
+printf("Веддіть число y =");
+scanf("%f",&y);
+printf("Веддіть число z =");
+scanf("%f",&z);
+m = x-y;
+n = sqrt(m);
+if (m < 0)
+{ 
+  printf("Неможливо взяти коріть з відємного числа задайте інші числа\n");
+}
+else if(n == 0 )
+{
+   printf("Неможливо поділити на нуль \n");
+}
+else{
+f = (pow(x,2)+pow(z,2))/n;
+printf("f=%f",f);
+}
+  return 0;
+}
